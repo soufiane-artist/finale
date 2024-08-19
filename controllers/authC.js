@@ -51,7 +51,7 @@ exports.Register = async(req,res)=>{
         coupone :code,
     })
     await user.save()
-    /*1*///verfy email
+    /*1*///verfy email ll
     //creating new verfication & save it toDB
         const verifytoken = new verrfyTokenModel({
             userId : user._id,
