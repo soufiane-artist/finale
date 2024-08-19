@@ -46,7 +46,7 @@ const server = app.listen(process.env.PORT,()=>{
 
 const io = socketIo(server ,{
   cors :{
-    origin: process.env.SOCKET,
+    origin: [process.env.SOCKET , "https://finale-backend2.onrender.com/"],
     methods: ["GET", "POST"]
   }
 })
